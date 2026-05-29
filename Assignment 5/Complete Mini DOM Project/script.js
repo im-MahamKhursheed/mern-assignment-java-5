@@ -17,16 +17,58 @@ function validateLogin() {
     return true;
 }
 //Task 7 (Bonus): Add Dark Mode, Reset Button, and Profile Image Preview.
+// function DarkMode() {
+//     if(document.body.style.backgroundColor === "black") {
+//         document.body.style.backgroundColor = "white";
+//         document.body.style.color = "black";
+//     }
+//     else {
+//         document.body.style.backgroundColor = "black";
+//         document.body.style.color = "white";
+//         document.getElementById("darkModeBtn").style.backgroundColor = "#470909";
+//         document.getElementById("darkModeBtn").style.color = "white";
+//     }
+// }
+let isDark = false;
+
 function DarkMode() {
-    if(document.body.style.backgroundColor === "black") {
-        document.body.style.backgroundColor = "white";
-        document.body.style.color = "black";
-    }
-    else {
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
+    const body = document.body;
+    const darkBtn = document.getElementById("darkModeBtn");
+
+    if (isDark) {
+        // Light mode
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+
+        darkBtn.style.backgroundColor = "#007BFF";
+        darkBtn.style.color = "white";
+
+        document.getElementById("btn1").style.backgroundColor = "#007BFF";
+        document.getElementById("btn1").style.color = "white";
+
+        document.getElementById("btn2").style.backgroundColor = "#007BFF";
+        document.getElementById("btn2").style.color = "white";
+
+        isDark = false;
+    } else {
+        // Dark mode
+        body.style.backgroundColor = "black";
+
+        darkBtn.style.backgroundColor = "#470909";
+        darkBtn.style.color = "white";
+
+        document.getElementById("btn1").style.backgroundColor = "#470909";
+        document.getElementById("btn1").style.color = "white";
+
+        document.getElementById("btn2").style.backgroundColor = "#470909";
+        document.getElementById("btn2").style.color = "white";
+
+        isDark = true;
     }
 }
+
+
+
 // Reset form fields to default values
 function resetForm() {
     document.getElementById("name").value = "";
