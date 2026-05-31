@@ -76,14 +76,4 @@ function resetForm() {
     document.getElementById("city").value = "";
     document.getElementById("profilePic").value = "";
 }
-// Preview the profile image when the URL is entered
-function previewImage() {
-    const profilePic = document.getElementById("profilePic").value;
-    const preview = document.getElementById("preview");
 
-    if (profilePic !== "") {
-        preview.src = profilePic; 
-    }else {
-        preview.src = ""; 
-    }
-}
