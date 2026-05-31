@@ -49,36 +49,8 @@
       background-color: #0056b3;
     }
 
-    #preview {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 2px solid #007BFF;
-      display: block;
-      margin: auto;
-    }
 
-    #profileContainer {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .profile-card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      display: inline-block;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .profile-card img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 3px solid #007BFF;
-      margin-bottom: 15px;
-    }
+   
 
     
 
